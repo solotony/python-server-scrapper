@@ -1,0 +1,12 @@
+RUN
+    python demo.py
+
+TEST
+    python -m unittest
+
+API:
+    http://localhost:7777/convert/<amount_in_usd>/
+    amount_in_usd integer or decimal
+example:
+    http://localhost:7777/convert/777/
+    http://localhost:7777/convert/333.33/
